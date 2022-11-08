@@ -142,7 +142,7 @@ include_directories(include ${catkin_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIRS})
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(trajectory_sampler src/trajectory_sampler.cpp)
+# add_executable(trajectory_sampler src/trajectory_sampler.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,12 +152,12 @@ add_executable(trajectory_sampler src/trajectory_sampler.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(trajectory_sampler ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_generate_messages_cpp)
+# add_dependencies(trajectory_sampler ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(trajectory_sampler
-   ${catkin_LIBRARIES}
- )
+# target_link_libraries(trajectory_sampler
+#   ${catkin_LIBRARIES}
+# )
 
 #############
 ## Install ##
